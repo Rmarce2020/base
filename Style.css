@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.Header h1 {
+  color: lightseagreen;
+  font-family: "Stick No Bills", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight 500px; 
+  font-style: normal;
+  margin-left: 25rem;
+  font-size: 3.5rem;  
+}
+
+.Header p {
+    font-family: fantasy;
+    margin-left: 30rem;
+    color: rgb(40, 106, 106);
+    letter-spacing: 0.1em;
+    
+}
+
+.Navbar {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    margin-top: 34px;
+    background-color: lightseagreen;
+    color: whitesmoke;
+    text-decoration: none;
+
+}
+.Navbar li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 2rem;
+    text-transform: none;
+    
+}
+
+nav a{ 
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+a:hover {
+    color: rgb(49, 152, 143);
+    background-color: rgb(243, 249, 250);
+}
+  
