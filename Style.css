@@ -2,50 +2,60 @@
     margin: 0;
     padding: 0;
 }
+
+/*-----------------------------------------------HEADER------------------------------------------------------------------------*/
 .Header h1 {
+  
   color: lightseagreen;
+  align-items: center;
   font-family: "Stick No Bills", sans-serif;
   font-optical-sizing: auto;
-  font-weight: weight 500px; 
+  font-weight: weight 200px; 
   font-style: normal;
-  margin-left: 25rem;
-  font-size: 3.5rem; 
+  margin-left: 5rem;
+  font-size: 2.5rem; 
+  
   
 }
 
 .Header p {
+    
     font-family: fantasy;
-    margin-left: 30rem;
+    margin-left: 6.5rem;
     color: rgb(40, 106, 106);
     letter-spacing: 0.1em;
-
+    
     
 }
 
+/*----------------------------------------------------------------NAVBAR--------------------------------------------------*/
+
 .Navbar {
+
     display: flex;
-    flex-direction: row-reverse;
-    position: relative;
     justify-content: center;
-    width: 100%;
+    width: 100%; 
     margin-top: 34px;
     background-color: lightseagreen;
     color: whitesmoke;
-    text-decoration: none;
+    
 
 }
+
 .Navbar li {
     list-style-type: none;
-    display: inline-block;
+    justify-content: center;
+    display: block;
     margin: 0 2rem;
-    text-transform: none;
-    
+        
 }
 
 nav a{ 
-    font-size: 1.5rem;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
     color: whitesmoke;
+    font-size: small;
 }
 
 a:hover {
@@ -59,7 +69,8 @@ main{
 .product-container{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; 
+    
     margin: 20px;
     padding: 20px;
     border: 1px solid #ccc;
@@ -75,97 +86,177 @@ main{
 
 .product-container h2{
     font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 10px;
     color:rgb(28, 117, 70)
 }
 
 .product-container p{
-    font-size: 16px;
+    font-size: 12px;
     margin-bottom: 10px;
     color:rgb(28, 136, 136);
     text-align: left;
+    
 }
 
 .product-container .precio{
     font-size: 20px;
     font-weight: bold;
     color:rgb(36, 156, 36);
-    border: 1px solid black;
+    border: 1px solid rgb(174, 41, 132);
     margin-bottom: 10px;
-    }
+}
 
 .product-container .boton-agregar-carrito{
     background-color: rgb(52, 194, 109);
     color: rgb(18, 18, 18);
     font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 20px;
     border: 5px solid black;
     border-radius: 12px;
     cursor: pointer;
-    }
+}
 
 .product-container .boton-agregar-carrito:hover{
-    background-color: rgb(207, 220, 20);
-    }
-    form{
+    background-color: rgb(207, 220, 20); 
+}
+.product-container img{
+    border-radius: 4px;
+}
+.material-symbols-outlined{
+    color: olive;
+}
+.product-container .cuidados{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    display: flex;
+    margin: 30px;
+}
+
+/*--------------------------------------------------------FORM----------------------------------------------------------------------------*/
+form{
     max-width: 200px;
     margin: 0 auto;
 
-    }
-    label {
-        display: block;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-weight: 500;
-        font-size: 35px;
-        color: rgb(51, 77, 24);
-        }
-    input{
-        width: 100%;
-        padding: 10px;
-        border-radius: 4px;
-        border: 1px solid  #24761d;
-
-                }
-    button{
-        background-color: darkgray;
-        color: #24761d;
-        font-size: 20px;
-        margin-top: 20px;
-        border-radius: 4px;
-
-    }
-
- @media (min-widht: 501px){
-            .container{
-            background-color: rgb(204, 244, 154);} 
-            .Navbar li {
-                list-style-type: none;
-                display: block;
-                flex-direction: column;
-                flex-wrap: wrap-reverse;
-                margin: 0 2rem;
-                font-size: small;            
-                
-            }
-            .Header h1 {
-               
-                text-align: left;
-
-            }
-            
-
-             } 
-
-        @media(min-widht: 801px){
-                .container{
-                background-color: rgb(179, 175, 48);
-                }}
+}
     
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 35px;
+    color: rgb(51, 77, 24);
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid  #24761d;
+}
+
+button{
+
+    background-color: darkgray;
+    color: #24761d;
+    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 4px;
+
+}
+
+/*---------------------FOOTER------------------------------------------------------------------------------------------------*/
 footer{
     background-color:dimgrey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color:  #fff ;
     padding: 20px;
     text-align: center;
     }
+    footer a{
+        font-size: 1rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-decoration: none;
+        color: whitesmoke;
+        font-size: small;
+    }
+
   
+
+/*----------------------------MEDIA Query----------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 501px) and (max-width: 800px){
+    
+    body{
+        background-color: rgb(204, 244, 154);
+    } 
+    
+    .product-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        
+                      
+    }
+    .product-container img{
+            
+        text-align: center;
+    }
+    .product-container p{
+        text-align: center;
+        flex: 1;
+        padding: 20px;
+        
+    }
+    
+    .Header h1 {
+               
+        text-align: center;
+        align-items: center;
+    }
+
+    .Header p{
+        text-align: center;
+        margin-left: 50px;
+    }
+    
+    .Navbar li {
+        display: inline-flex;
+        justify-content: space-between;
+        margin: 0 1rem;
+        font-size: 10px; 
+         }
+    }
+
+    @media screen and (min-width: 801px) {
+    
+        body{
+            background-color: rgb(217, 238, 191);
+        } 
+        
+        .Header h1 {
+            font-size: 60px;      
+            text-align: center;
+            align-items: center;
+        }
+    
+        .Header p{
+            font-size: 40px;
+            text-align: center;
+            margin-left: 50px;
+        }
+        
+        .Navbar li {
+            display: inline-flex;
+            justify-content: space-between;
+            margin: 0 1rem;
+            font-size: 30px; 
+             }
+         
+            
+} 
+
+
